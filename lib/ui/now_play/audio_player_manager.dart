@@ -18,6 +18,11 @@ class AudioPlayerManager {
             total: playbackEvent.duration));
     player.setUrl(songUrl);
   }
+  void updateSongUrl(String url){
+    songUrl = url;
+    init();
+  }
+
   void dispose(){
     player.dispose();
   }
